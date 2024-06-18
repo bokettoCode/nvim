@@ -18,8 +18,8 @@ keymap.set("n", "<leader>nh", ":nohl<CR>", opts)
 keymap.set("n", "x", '"_x', opts)
 
 -- increment/decrement numbers
-keymap.set('n', '<leader>+', '<C-a>', opts)
-keymap.set('n', '<leader>-', '<C-x>', opts)
+keymap.set("n", "<leader>+", "<C-a>", opts)
+keymap.set("n", "<leader>-", "<C-x>", opts)
 
 -- save file
 keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", opts)
@@ -39,15 +39,15 @@ keymap.set("n", "<leader>tn", ":tabn<CR>", opts) -- go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>", opts) -- go to previous tab
 
 -- switch between windows
-keymap.set('n', '<C-h>', '<CMD>NavigatorLeft<CR>', opts)
-keymap.set('n', '<C-l>', '<CMD>NavigatorRight<CR>', opts)
-keymap.set('n', '<C-j>', '<CMD>NavigatorDown<CR>', opts)
-keymap.set('n', '<C-k>', '<CMD>NavigatorUp<CR>', opts)
+keymap.set("n", "<C-h>", "<CMD>NavigatorLeft<CR>", opts)
+keymap.set("n", "<C-l>", "<CMD>NavigatorRight<CR>", opts)
+keymap.set("n", "<C-j>", "<CMD>NavigatorDown<CR>", opts)
+keymap.set("n", "<C-k>", "<CMD>NavigatorUp<CR>", opts)
 
 -- switch between buffers
-keymap.set('n', '<Tab>', ':bnext<CR>', opts)
-keymap.set('n', '<S-Tab>', ':bprev<CR>', opts)
-keymap.set('n', '<leader>bx', ':bdelete<CR>', opts)
+keymap.set("n", "<Tab>", ":bnext<CR>", opts)
+keymap.set("n", "<S-Tab>", ":bprev<CR>", opts)
+keymap.set("n", "<leader>bx", ":bdelete<CR>", opts)
 
 --------------------
 -- Plugin Keybinds
@@ -57,14 +57,14 @@ keymap.set('n', '<leader>bx', ':bdelete<CR>', opts)
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>", opts) -- toggle split window maximization
 
 -- nvim-tree
-keymap.set('n', "<leader>e", ':NvimTreeToggle<CR>', opts)
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- telescope
-keymap.set('n', "<leader>ff", ':Telescope find_files<CR>', opts)
-keymap.set('n', "<leader>fg", ':Telescope live_grep<CR>', opts)
-keymap.set('n', "<leader>fs", ':Telescope grep_string<CR>', opts)
-keymap.set('n', "<leader>fb", ':Telescope buffers<CR>', opts)
-keymap.set('n', "<leader>fh", ':Telescope help_tags<CR>', opts)
+keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
+keymap.set("n", "<leader>fs", ":Telescope grep_string<CR>", opts)
+keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
 
 -- persisence
 vim.api.nvim_set_keymap("n", "<leader>qs", [[<cmd>lua require("persistence").load()<cr>]], {}) -- restore the session for the current directory
