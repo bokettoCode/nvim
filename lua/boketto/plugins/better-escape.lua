@@ -4,7 +4,7 @@ return {
 	config = function()
 		require("better_escape").setup({
 			mapping = { "jk", "jj" },
-			timeout = 200,
+			timeout = 250,
 		})
 	end,
 }

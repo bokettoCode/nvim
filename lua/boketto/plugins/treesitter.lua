@@ -7,6 +7,8 @@ return {
 				ensure_installed = {
 					"lua",
 					"python",
+					"vim",
+					"vimdoc",
 				},
 
 				highlight = { enable = true },
