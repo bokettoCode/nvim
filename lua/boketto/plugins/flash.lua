@@ -1,6 +1,11 @@
 return {
 	"folke/flash.nvim",
 	event = { "BufReadPre", "BufNewFile" },
+	opts = {
+		jump = {
+			autojump = true,
+		},
+	},
 	keys = {
 		{
 			"s",
