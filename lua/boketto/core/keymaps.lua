@@ -3,7 +3,7 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
---------------------
+-------------------
 -- General Keymaps
 --------------------
 
@@ -33,6 +33,14 @@ keymap.set("n", "<leader>sh", "<C-w>s", opts) -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=", opts) -- make split windows equal width & height
 keymap.set("n", "<leader>sx", ":close<CR>", opts) -- close current split window
 
+-- resize window
+keymap.set("n", "<C-A-h>", "<C-w><", opts)
+keymap.set("n", "<C-A-l>", "<C-w>>", opts)
+keymap.set("n", "<C-A-k>", "<C-w>+", opts)
+keymap.set("n", "<C-A-j>", "<C-w>-", opts)
+keymap.set("n", "<leader>ss", "<C-w>=", opts)
+
+-- tab management
 keymap.set("n", "<leader>to", ":tabnew<CR>", opts) -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>", opts) -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>", opts) -- go to next tab
